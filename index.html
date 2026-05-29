@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annany Jangid | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(15,23,42,0.7);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:100px 10%;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.2;
+}
+
+.hero-text span{
+    background:linear-gradient(90deg,#38bdf8,#8b5cf6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    background:linear-gradient(45deg,#38bdf8,#8b5cf6);
+    color:white;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px #38bdf8;
+}
+
+
+/* Sections */
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:60px;
+    color:#38bdf8;
+}
+
+/* About */
+
+.about-card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:40px;
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.about-card p{
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+/* Skills */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.skill{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(56,189,248,.3);
+}
+
+/* Projects */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.project{
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+}
+
+.project img{
+    width:100%;
+}
+
+.project-content{
+    padding:20px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    color:#cbd5e1;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+@media(max-width:900px){
+.hero-content{
+grid-template-columns:1fr;
+text-align:center;
+}
+.hero-text h1{
+font-size:3rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="logo">jAnnany75</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-text">
+<h1>Hi, I'm <span>Annany Jangid</span></h1>
+
+<p>
+Web Developer • B.Tech CSE Student • Problem Solver
+</p>
+
+<p>
+Passionate about building beautiful websites and
+interactive web applications using modern technologies.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about-card">
+<p>
+I am a Computer Science Engineering student at Government Engineering College Ajmer (GECA). I specialize in frontend development and enjoy creating visually appealing websites with modern UI/UX principles.
+
+My technical skills include HTML, CSS, JavaScript, Responsive Web Design, Git & GitHub. I am continuously learning new technologies and building projects to strengthen my development skills.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>HTML5</h3>
+<p>Semantic & Modern Layouts</p>
+</div>
+
+<div class="skill">
+<h3>CSS3</h3>
+<p>Animations & Responsive Design</p>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<p>Interactive User Experiences</p>
+</div>
+
+<div class="skill">
+<h3>Git & GitHub</h3>
+<p>Version Control</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200">
+<div class="project-content">
+<h3>Portfolio Website</h3>
+<p>Personal portfolio with modern animations.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1200">
+<div class="project-content">
+<h3>Birthday Website</h3>
+<p>Interactive website with animations and effects.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200">
+<div class="project-content">
+<h3>Stopwatch App</h3>
+<p>Responsive stopwatch built using JavaScript.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+<p>📧 annany@example.com</p>
+<p>💻 GitHub: https://github.com/jannany75</p>
+<p>🔗 LinkedIn: https://www.linkedin.com/in/annany-jangid-899271379/</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Annany Jangid | All Rights Reserved
+</footer>
+
+</body>
+</html>
